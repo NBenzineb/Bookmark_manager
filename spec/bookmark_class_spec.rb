@@ -36,4 +36,28 @@ describe Bookmark do
     end
   end
 
+  describe '.update' do
+    it "Updates the bookmark with the given data" do
+      bookmark = Bookmark.create(title: 'Makers Academy', url: 'http://www.makersacademy.com')
+      update_bookmark = Bookmark.update(id: bookmark.id, url: 'https://youtube.com', title: 'Youtube')
+      
+      expect(bookmark).to be_a Bookmark
+      expect(bookmark.id).to eq bookmark.id
+      expect(bookmark.title).to eq 'Youtube'
+      expect(bookmark.url).to eq 'http://youtube.com'
+    end
+  end
+
+  describe '.find' do
+    it 'returns the reuested bookmark object' do
+      bookmark = Bookmark.create(title: 'Makers Academy', url: 'http://www.makersacademy.com')
+
+      result = Bookmark.find(id: bookmark.id)
+
+      expect(result).to be_a Bookmark
+      expect(bookmark.id).to eq bookmark.id
+      expect(bookmark.title).to eq 'Makers Academy'
+      expect(bookmark.url).to eq 'http://makersacademy.com'
+    end
+  end
 end

@@ -1,0 +1,8 @@
+<form action="/bookmarks/<%= @bookmark_id %>" method="post" >
+  <input type="hidden" name="_method" value="PATCH" />
+  <label>Enter URL to update: </label>
+  <input type="text" name="url" value="<%= @bookmark.url %>" />
+  <label> Enter Title to update:</label>
+  <input type="text" name="title" value="<%= @bookmark.title %>"/>
+  <input type="submit" value="Submit" />
+  </form>

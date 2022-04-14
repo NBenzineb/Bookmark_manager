@@ -14,6 +14,12 @@ I want to add the site's address and title to a bookmark manager`
 
 Link to the domain model: https://miro.com/app/board/uXjVO9sGhD0=/
 
+# USER STORY 3
+
+As a user
+So I can change a bookmark in Bookmark Manager
+I want to update a bookmark
+
 
 <img src="https://lh3.googleusercontent.com/OSNE4yP8pyxyxZ6dUTGCNktWmhXweuUUvIbNJuu8FGhcKHUkx3xaTA2BshQAR_3un_xDo_U=s170"  width="800" height="400" />
 
